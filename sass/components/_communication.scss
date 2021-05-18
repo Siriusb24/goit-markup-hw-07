@@ -23,11 +23,12 @@
     text-decoration: none;
     color: var(--main-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+   
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 
-.communication__contacts:hover,
-.communication__contacts:focus {
-    color: var(--accent-color);
 }
 
 .communication__icon {
@@ -36,12 +37,12 @@
     transition-property: fill, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.communication__contacts:hover .communication__icon,
-.communication__contacts:focus .communication__icon {
-    fill: var(--accent-color);
-    color: var(--accent-color);
+    
+    .communication__contacts:hover &,
+    .communication__contacts:focus & {
+        fill: var(--accent-color);
+        color: var(--accent-color);
+    }
 }
 
 .studio:valid {

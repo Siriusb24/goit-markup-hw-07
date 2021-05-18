@@ -19,14 +19,14 @@
     height: 15px;
     border: 2px solid var(--secondary-color);
     border-radius: 2px;
+
+    .licence:focus-within &{
+        border-color: var(--accent-color);
+    }
 }
 
 .licence__link {
     color: var(--accent-color);
-}
-
-.licence:focus-within .licence__icon::before{
-    border-color: var(--accent-color);
 }
 
 .licence__checkbox:checked + .licence__icon::before {

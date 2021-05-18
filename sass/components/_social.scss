@@ -16,21 +16,23 @@
     background-color: var(--alt-color);
     border-radius: 50%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.social__link:hover,
-.social__link:focus {
+    &:hover,
+    &:focus {
     background-color: var(--accent-color);
 }
+}
+
 
 .social__icon {
     width: 20px;
     height: 20px;
     fill: #afb1b8;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.social__link:hover .social__icon,
-.social__link:focus .social__icon {
+    .social__link:hover &,
+    .social__link:focus & {
     fill: var(--alt-color);
 }
+}
+
