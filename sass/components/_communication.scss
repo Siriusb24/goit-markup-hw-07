@@ -1,0 +1,49 @@
+.communication {
+    padding-left: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.communication__nav {
+    display: inline-flex;
+}
+
+.communication__nav:not(:last-child) {
+    margin-right: 50px;
+}
+
+.communication__contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--main-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.communication__contacts:hover,
+.communication__contacts:focus {
+    color: var(--accent-color);
+}
+
+.communication__icon {
+    margin-right: 10px;
+    fill: var(--main-color);
+    transition-property: fill, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.communication__contacts:hover .communication__icon,
+.communication__contacts:focus .communication__icon {
+    fill: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.studio:valid {
+    color: var(--accent-color);
+}
