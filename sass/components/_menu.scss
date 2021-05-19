@@ -1,18 +1,18 @@
-.menu {
+.nav__list {
     display: inline-flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-left: 0;
 }
 
-.page-header__menu{
+.nav__menu{
     margin: 0;
 }
 
-.menu__content:not(:last-child) {
+.nav__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.menu__link {
+.nav__link {
+    display: block;
     position: relative;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -23,11 +23,11 @@
     &:hover,
     &:focus {
     color: var(--accent-color);
-}
+    }
 
     & .current {
     color: var(--accent-color);
-}
+    }
 
 }
 
@@ -40,8 +40,4 @@
     height: 4px;
     background-color: var(--accent-color);
     border-radius: 2px;
-}
-
-.page-header__communication{
-    margin: 0;
 }

@@ -1,9 +1,9 @@
-.projects {
+.services {
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
-.projects__title {
+.services__title {
     margin-top: 0;
     margin-bottom: 0;
     color: var(--secondary-color);
@@ -14,24 +14,24 @@
     letter-spacing: 0.03em;
 }
 
-.projects__makets {
+.services__list {
     display: inline-flex;
     margin-top: 50px;
     margin-bottom: 0;
     padding-left: 0;
 }
 
-.projects__item:not(:last-child) {
+.services__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.projects__thrumb {
+.services__thrumb {
     position: relative;
     width: 370px;
     height: 294px;
 }
 
-.projects__describe {
+.services__describe {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,7 +44,7 @@
     background: rgba(47, 48, 58, 0.8);
 }
 
-.projects__text {
+.services__text {
     margin: 0;
     color: var(--alt-color);
     font-weight: 700;

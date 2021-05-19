@@ -6,17 +6,18 @@
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--secondary-color);
+    margin: 0;
 }
 
-.communication__nav {
+.communication__item {
     display: inline-flex;
-}
 
-.communication__nav:not(:last-child) {
+    &:not(:last-child) {
     margin-right: 50px;
+    }
 }
 
-.communication__contacts {
+.communication__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,8 +39,8 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
-    .communication__contacts:hover &,
-    .communication__contacts:focus & {
+    .communication__link:hover &,
+    .communication__link:focus & {
         fill: var(--accent-color);
         color: var(--accent-color);
     }
